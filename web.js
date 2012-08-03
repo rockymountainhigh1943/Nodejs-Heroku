@@ -2,7 +2,8 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-var html = '<!DOCTYPE HTML>
+app.get('/', function(request, response){
+	response.send('<!DOCTYPE HTML>
 <html lang="en">
 <head>
 <title>Week 3 | Node.js with Express</title>
@@ -10,10 +11,7 @@ var html = '<!DOCTYPE HTML>
 <body>
 	<h1>Hello World!</h1>
 </body>
-</html>';
-
-app.get('/', function(request, response){
-	response.send('Hi baby');
+</html>');
 });
 
 var port = process.env.PORT || 5000;
