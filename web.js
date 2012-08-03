@@ -3,8 +3,7 @@ var express = require('express');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response){
-	var html = 
-	'<!DOCTYPE HTML>
+	var html = '<!DOCTYPE HTML>
 	<html lang="en">
 	<head>
 		<title>Week 3 | Node.js with Express</title>
