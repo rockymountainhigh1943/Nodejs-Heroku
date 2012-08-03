@@ -13,7 +13,7 @@ app.get('/', function(request, response){
   		<h1>Hello World!</h1>
   	</body>
 	</html>';
-	response.send(html);
+	response.send('Hi baby');
 });
 
 var port = process.env.PORT || 5000;
